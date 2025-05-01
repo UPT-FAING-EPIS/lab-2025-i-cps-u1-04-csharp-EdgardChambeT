@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cFuoBGkTctw=",
+  "dgSpecHash": "xhGAC+t8NRo=",
   "success": true,
   "projectFilePath": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\ATM\\ATM.Domain.Tests\\ATM.Domain.Tests.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,10 @@
     "C:\\Users\\Jean_\\.nuget\\packages\\nunit\\4.2.2\\nunit.4.2.2.nupkg.sha512",
     "C:\\Users\\Jean_\\.nuget\\packages\\nunit.analyzers\\4.3.0\\nunit.analyzers.4.3.0.nupkg.sha512",
     "C:\\Users\\Jean_\\.nuget\\packages\\nunit3testadapter\\4.6.0\\nunit3testadapter.4.6.0.nupkg.sha512",
-    "C:\\Users\\Jean_\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+    "C:\\Users\\Jean_\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\Jean_\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Jean_\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Jean_\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }
