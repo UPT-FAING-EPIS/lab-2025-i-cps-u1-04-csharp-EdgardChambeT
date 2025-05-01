@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tnj+bneId4M=",
+  "dgSpecHash": "6uv+6Zn5ZeU=",
   "success": true,
-  "projectFilePath": "C:\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",

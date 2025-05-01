@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
         "projectName": "Payment.Domain.Tests",
-        "projectPath": "C:\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Payment\\Payment.Domain.Tests\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
-                "projectPath": "C:\\Payment\\Payment.Domain\\Payment.Domain.csproj"
+              "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
         "projectName": "Payment.Domain",
-        "projectPath": "C:\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Payment\\Payment.Domain\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

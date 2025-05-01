@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JD3TEz45oaE=",
+  "dgSpecHash": "EArQaMii5Go=",
   "success": true,
-  "projectFilePath": "C:\\ATM\\ATM.Domain.Tests\\ATM.Domain.Tests.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\ATM\\ATM.Domain.Tests\\ATM.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
