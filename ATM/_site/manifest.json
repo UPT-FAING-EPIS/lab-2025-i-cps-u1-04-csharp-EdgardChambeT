@@ -1,0 +1,210 @@
+{
+  "source_base_path": "C:/ATM",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.ATM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.ATM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.ATM",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.ATM.yml\" sourcestartlinenumber=\"1\">Clase que actúa como invocador (Invoker) en el patrón Command.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.Account.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.Account",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.Account.yml\" sourcestartlinenumber=\"1\">Representa una cuenta bancaria con operaciones básicas de retiro y depósito.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.DepositCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.DepositCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.DepositCommand",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.DepositCommand.yml\" sourcestartlinenumber=\"1\">Comando concreto para depositar fondos en una cuenta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.ICommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.ICommand",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.ICommand.yml\" sourcestartlinenumber=\"1\">Interfaz base para los comandos del ATM. Define el método <xref href=\"ATM.Domain.ICommand.Execute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.Tests.ATMTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.Tests.ATMTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.Tests.ATMTests",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.Tests.ATMTests.yml\" sourcestartlinenumber=\"1\">Pruebas unitarias para las clases <xref href=\"ATM.Domain.ATM\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"ATM.Domain.WithdrawCommand\" data-throw-if-not-resolved=\"false\"></xref> y <xref href=\"ATM.Domain.DepositCommand\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.WithdrawCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.WithdrawCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.WithdrawCommand",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.WithdrawCommand.yml\" sourcestartlinenumber=\"1\">Comando concreto para retirar fondos de una cuenta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "atm.md",
+      "output": {
+        ".html": {
+          "relative_path": "atm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "api/Payment.Domain.CashPaymentStrategy.html": {
+    "href": "api/Payment.Domain.CashPaymentStrategy.html",
+    "title": "Class CashPaymentStrategy",
+    "summary": "Class CashPaymentStrategy Namespace Payment.Domain Assembly Payment.Domain.dll public class CashPaymentStrategy : IPaymentStrategy Inheritance object CashPaymentStrategy Implements IPaymentStrategy Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Pay(double) public bool Pay(double amount) Parameters amount double Returns bool"
+  },
+  "api/Payment.Domain.CreditCardPaymentStrategy.html": {
+    "href": "api/Payment.Domain.CreditCardPaymentStrategy.html",
+    "title": "Class CreditCardPaymentStrategy",
+    "summary": "Class CreditCardPaymentStrategy Namespace Payment.Domain Assembly Payment.Domain.dll public class CreditCardPaymentStrategy : IPaymentStrategy Inheritance object CreditCardPaymentStrategy Implements IPaymentStrategy Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Pay(double) public bool Pay(double amount) Parameters amount double Returns bool"
+  },
+  "api/Payment.Domain.DebitCardPaymentStrategy.html": {
+    "href": "api/Payment.Domain.DebitCardPaymentStrategy.html",
+    "title": "Class DebitCardPaymentStrategy",
+    "summary": "Class DebitCardPaymentStrategy Namespace Payment.Domain Assembly Payment.Domain.dll public class DebitCardPaymentStrategy : IPaymentStrategy Inheritance object DebitCardPaymentStrategy Implements IPaymentStrategy Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Pay(double) public bool Pay(double amount) Parameters amount double Returns bool"
+  },
+  "api/Payment.Domain.IPaymentStrategy.html": {
+    "href": "api/Payment.Domain.IPaymentStrategy.html",
+    "title": "Interface IPaymentStrategy",
+    "summary": "Interface IPaymentStrategy Namespace Payment.Domain Assembly Payment.Domain.dll public interface IPaymentStrategy Methods Pay(double) bool Pay(double amount) Parameters amount double Returns bool"
+  },
+  "api/Payment.Domain.PaymentContext.html": {
+    "href": "api/Payment.Domain.PaymentContext.html",
+    "title": "Class PaymentContext",
+    "summary": "Class PaymentContext Namespace Payment.Domain Assembly Payment.Domain.dll public class PaymentContext Inheritance object PaymentContext Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Pay(double) public bool Pay(double amount) Parameters amount double Returns bool SetPaymentStrategy(IPaymentStrategy) public void SetPaymentStrategy(IPaymentStrategy strategy) Parameters strategy IPaymentStrategy"
+  },
+  "api/Payment.Domain.PaymentService.html": {
+    "href": "api/Payment.Domain.PaymentService.html",
+    "title": "Class PaymentService",
+    "summary": "Class PaymentService Namespace Payment.Domain Assembly Payment.Domain.dll public class PaymentService Inheritance object PaymentService Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods ProcessPayment(int, double) public bool ProcessPayment(int SelectedPaymentType, double Amount) Parameters SelectedPaymentType int Amount double Returns bool"
+  },
+  "api/Payment.Domain.PaymentType.html": {
+    "href": "api/Payment.Domain.PaymentType.html",
+    "title": "Enum PaymentType",
+    "summary": "Enum PaymentType Namespace Payment.Domain Assembly Payment.Domain.dll public enum PaymentType Fields Cash = 3 CreditCard = 1 DebitCard = 2"
+  },
+  "api/Payment.Domain.Tests.PaymentTests.html": {
+    "href": "api/Payment.Domain.Tests.PaymentTests.html",
+    "title": "Class PaymentTests",
+    "summary": "Class PaymentTests Namespace Payment.Domain.Tests Assembly Payment.Domain.Tests.dll public class PaymentTests Inheritance object PaymentTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GivenAValidPaymentTypeAndAmount_WhenProcessPayment_ResultIsSuccesful(int, double) [TestCase(1, 1000)] [TestCase(2, 2000)] [TestCase(3, 3000)] public void GivenAValidPaymentTypeAndAmount_WhenProcessPayment_ResultIsSuccesful(int paymentType, double amount) Parameters paymentType int amount double GivenAnUnknownPaymentTypeAndAmount_WhenProcessPayment_ResultIsError(int, double) [TestCase(4, 4000)] public void GivenAnUnknownPaymentTypeAndAmount_WhenProcessPayment_ResultIsError(int paymentType, double amount) Parameters paymentType int amount double"
+  },
+  "api/Payment.Domain.Tests.html": {
+    "href": "api/Payment.Domain.Tests.html",
+    "title": "Namespace Payment.Domain.Tests",
+    "summary": "Namespace Payment.Domain.Tests Classes PaymentTests"
+  },
+  "api/Payment.Domain.html": {
+    "href": "api/Payment.Domain.html",
+    "title": "Namespace Payment.Domain",
+    "summary": "Namespace Payment.Domain Classes CashPaymentStrategy CreditCardPaymentStrategy DebitCardPaymentStrategy PaymentContext PaymentService Interfaces IPaymentStrategy Enums PaymentType"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction",
+    "summary": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE.",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  },
+  "payment.html": {
+    "href": "payment.html",
+    "title": "",
+    "summary": "classDiagram class CashPaymentStrategy CashPaymentStrategy : +Pay() Boolean class CreditCardPaymentStrategy CreditCardPaymentStrategy : +Pay() Boolean class DebitCardPaymentStrategy DebitCardPaymentStrategy : +Pay() Boolean class IPaymentStrategy IPaymentStrategy : +Pay() Boolean class PaymentContext PaymentContext : +SetPaymentStrategy() Void PaymentContext : +Pay() Boolean class PaymentService PaymentService : +ProcessPayment() Boolean IPaymentStrategy <|.. CashPaymentStrategy IPaymentStrategy <|.. CreditCardPaymentStrategy IPaymentStrategy <|.. DebitCardPaymentStrategy"
+  }
+}

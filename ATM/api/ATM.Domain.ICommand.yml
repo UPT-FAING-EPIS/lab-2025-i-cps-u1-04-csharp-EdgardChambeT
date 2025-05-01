@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: ATM.Domain.ICommand
+  commentId: T:ATM.Domain.ICommand
+  id: ICommand
+  parent: ATM.Domain
+  children:
+  - ATM.Domain.ICommand.Execute
+  langs:
+  - csharp
+  - vb
+  name: ICommand
+  nameWithType: ICommand
+  fullName: ATM.Domain.ICommand
+  type: Interface
+  source:
+    id: ICommand
+    path: C:\ATM\ATM.Domain\ICommand.cs
+    startLine: 5
+  assemblies:
+  - ATM.Domain
+  namespace: ATM.Domain
+  summary: Interfaz base para los comandos del ATM. Define el método <xref href="ATM.Domain.ICommand.Execute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface ICommand
+    content.vb: Public Interface ICommand
+- uid: ATM.Domain.ICommand.Execute
+  commentId: M:ATM.Domain.ICommand.Execute
+  id: Execute
+  parent: ATM.Domain.ICommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: ATM.Domain.ICommand.Execute()
+  type: Method
+  source:
+    id: Execute
+    path: C:\ATM\ATM.Domain\ICommand.cs
+    startLine: 10
+  assemblies:
+  - ATM.Domain
+  namespace: ATM.Domain
+  summary: Ejecuta la acción asociada al comando.
+  example: []
+  syntax:
+    content: void Execute()
+    content.vb: Sub Execute()
+  overload: ATM.Domain.ICommand.Execute*
+references:
+- uid: ATM.Domain.ICommand.Execute
+  commentId: M:ATM.Domain.ICommand.Execute
+  parent: ATM.Domain.ICommand
+  href: ATM.Domain.ICommand.html#ATM_Domain_ICommand_Execute
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: ATM.Domain.ICommand.Execute()
+  spec.csharp:
+  - uid: ATM.Domain.ICommand.Execute
+    name: Execute
+    href: ATM.Domain.ICommand.html#ATM_Domain_ICommand_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ATM.Domain.ICommand.Execute
+    name: Execute
+    href: ATM.Domain.ICommand.html#ATM_Domain_ICommand_Execute
+  - name: (
+  - name: )
+- uid: ATM.Domain
+  commentId: N:ATM.Domain
+  href: ATM.html
+  name: ATM.Domain
+  nameWithType: ATM.Domain
+  fullName: ATM.Domain
+  spec.csharp:
+  - uid: ATM
+    name: ATM
+    href: ATM.html
+  - name: .
+  - uid: ATM.Domain
+    name: Domain
+    href: ATM.Domain.html
+  spec.vb:
+  - uid: ATM
+    name: ATM
+    href: ATM.html
+  - name: .
+  - uid: ATM.Domain
+    name: Domain
+    href: ATM.Domain.html
+- uid: ATM.Domain.ICommand
+  commentId: T:ATM.Domain.ICommand
+  parent: ATM.Domain
+  href: ATM.Domain.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: ATM.Domain.ICommand
+- uid: ATM.Domain.ICommand.Execute*
+  commentId: Overload:ATM.Domain.ICommand.Execute
+  href: ATM.Domain.ICommand.html#ATM_Domain_ICommand_Execute
+  name: Execute
+  nameWithType: ICommand.Execute
+  fullName: ATM.Domain.ICommand.Execute
