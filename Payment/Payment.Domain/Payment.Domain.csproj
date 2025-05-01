@@ -4,6 +4,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-  </PropertyGroup>
+
+    <PackageId>lab-2025-i-cps-u1-04-csharp-EdgardChambeT-Payment</PackageId>
+    <Version>1.0.0</Version>
+     <Authors>Edgard Chambe</Authors>
+    <Company>EdgReynaldoCH</Company> 
+    <Description>Este es el proyecto del laboratorio 4-Payment</Description> 
+    <PackageTags>solid, principles, domain</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression> 
+    </PropertyGroup>
 
 </Project>

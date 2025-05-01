@@ -1,0 +1,94 @@
+name: Build and Publish NuGet Packages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'ATM/ATM.Domain/**'
+      - 'Payment/Payment.Domain/**'
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+
+      - name: Extract versions
+        id: versions
+        run: |
+          ATM_VERSION=$(grep -oPm1 "(?<=<Version>)[^<]+" ATM/ATM.Domain/ATM.Domain.csproj)
+          PAY_VERSION=$(grep -oPm1 "(?<=<Version>)[^<]+" Payment/Payment.Domain/Payment.Domain.csproj)
+          echo "atm_version=$ATM_VERSION" >> $GITHUB_OUTPUT
+          echo "payment_version=$PAY_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Restore dependencies
+        run: |
+          dotnet restore ATM/ATM.Domain/ATM.Domain.csproj
+          dotnet restore Payment/Payment.Domain/Payment.Domain.csproj
+
+      - name: Build projects
+        run: |
+          dotnet build ATM/ATM.Domain/ATM.Domain.csproj --configuration Release
+          dotnet build Payment/Payment.Domain/Payment.Domain.csproj --configuration Release
+
+      - name: Pack NuGet Packages
+        run: |
+          mkdir -p ./nupkgs
+          dotnet pack ATM/ATM.Domain/ATM.Domain.csproj --configuration Release --output ./nupkgs
+          dotnet pack Payment/Payment.Domain/Payment.Domain.csproj --configuration Release --output ./nupkgs
+
+      - name: Publish NuGet Packages to GitHub Packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          dotnet nuget push ./nupkgs/*.nupkg \
+            --skip-duplicate \
+            -k ${{ secrets.GITHUB_TOKEN }} \
+            -s https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+
+      - name: Create tag automatically
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git tag -a v${{ steps.versions.outputs.atm_version }}-atm -m "ATM.Domain v${{ steps.versions.outputs.atm_version }}"
+          git tag -a v${{ steps.versions.outputs.payment_version }}-payment -m "Payment.Domain v${{ steps.versions.outputs.payment_version }}"
+          git push https://x-access-token:${GH_PAT}@github.com/${{ github.repository }} --tags
+
+      - name: Create GitHub Release for ATM
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.versions.outputs.atm_version }}-atm
+          name: ATM.Domain v${{ steps.versions.outputs.atm_version }}
+          body: Publicación del paquete NuGet de ATM.Domain
+          files: ./nupkgs/ATM.*.nupkg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create GitHub Release for Payment
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.versions.outputs.payment_version }}-payment
+          name: Payment.Domain v${{ steps.versions.outputs.payment_version }}
+          body: Publicación del paquete NuGet de Payment.Domain
+          files: ./nupkgs/Payment.*.nupkg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger release_version.yml
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          curl -X POST https://api.github.com/repos/${{ github.repository }}/actions/workflows/release_version.yml/dispatches \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: token ${GH_PAT}" \
+          -d '{"ref":"main"}'

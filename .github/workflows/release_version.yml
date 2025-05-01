@@ -1,0 +1,38 @@
+name: Auto Release NuGet Packages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git user
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Fetch tags and determine latest
+        id: tags
+        run: |
+          git fetch --tags
+          CUST_TAG=$(git tag | grep customer | sort -V | tail -n1)
+          NOTIF_TAG=$(git tag | grep notifications | sort -V | tail -n1)
+          echo "cust_tag=$CUST_TAG" >> $GITHUB_OUTPUT
+          echo "notif_tag=$NOTIF_TAG" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "release-${{ github.run_number }}"
+          name: "NuGet Release #${{ github.run_number }}"
+          body: |
+            Se publicaron los siguientes paquetes:
+            - CustomerApp.Domain: ${{ steps.tags.outputs.cust_tag }}
+            - Notifications.Domain: ${{ steps.tags.outputs.notif_tag }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
