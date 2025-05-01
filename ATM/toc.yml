@@ -1,4 +1,6 @@
-- name: Docs
-  href: docs/
-- name: API
-  href: api/
+- name: Inicio
+  href: index.md
+- name: Diagrama de Clases
+  href: disenio.md
+- name: Documentación Técnica (API)
+  href: api/toc.html

@@ -27,7 +27,8 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "toc.yml"
         ]
       }
     ],
@@ -37,8 +38,8 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "",
-      "_appTitle": "",
+      "_appName": "ATM.Domain",
+      "_appTitle": "ATM Domain",
       "_enableSearch": true,
       "pdf": true
     }

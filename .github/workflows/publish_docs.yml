@@ -1,0 +1,82 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+
+      - name: Install DocFX
+        run: dotnet tool install -g docfx --version 2.74.1
+
+      - name: Build ATM documentation
+        run: |
+          docfx metadata ./ATM/docfx.json
+          docfx build ./ATM/docfx.json
+
+      - name: Build Payment documentation
+        run: |
+          docfx metadata ./Payment/docfx.json
+          docfx build ./Payment/docfx.json
+
+      - name: Combine documentation outputs
+        run: |
+          mkdir -p site/ATM
+          mkdir -p site/Payment
+          cp -r ATM/_site/* site/ATM/
+          cp -r Payment/_site/* site/Payment/
+
+      - name: Create root index.html
+        run: |
+          echo '<!DOCTYPE html>
+          <html lang="es">
+          <head>
+              <meta charset="UTF-8">
+              <title>Documentación Técnica</title>
+              <style>
+                  body { font-family: sans-serif; padding: 2rem; }
+                  h1 { color: #0366d6; }
+                  ul { list-style: none; padding: 0; }
+                  li { margin: 1rem 0; }
+                  a { text-decoration: none; color: #0366d6; font-weight: bold; }
+                  a:hover { text-decoration: underline; }
+              </style>
+          </head>
+          <body>
+              <h1>Documentación de los Proyectos</h1>
+              <ul>
+                  <li><a href="ATM/index.html">📘 ATM</a></li>
+                  <li><a href="Payment/index.html">📗 Payment</a></li>
+              </ul>
+          </body>
+          </html>' > site/index.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
