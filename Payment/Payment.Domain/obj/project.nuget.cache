@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MJDwSfyQqTA=",
+  "dgSpecHash": "QaCzBSS5cUo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jean_\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Jean_\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Jean_\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

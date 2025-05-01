@@ -1,0 +1,12 @@
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.deps.json
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.dll
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.pdb
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.AssemblyInfoInputs.cache
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.AssemblyInfo.cs
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.sourcelink.json
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.dll
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\refint\Payment.Domain.dll
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.pdb
+C:\Users\Jean_\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\Payment\Payment.Domain\obj\Debug\net8.0\ref\Payment.Domain.dll

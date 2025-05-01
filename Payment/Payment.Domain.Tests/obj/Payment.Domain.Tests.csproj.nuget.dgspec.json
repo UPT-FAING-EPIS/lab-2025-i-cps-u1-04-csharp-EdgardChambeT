@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {}
+    "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {
+    "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
         "projectName": "Payment.Domain.Tests",
-        "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\Payment.Domain.Tests.csproj",
+        "packagesPath": "C:\\Users\\Jean_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jean_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj"
+              "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
+                "projectPath": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj"
               }
             }
           }
@@ -46,9 +47,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -91,37 +92,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
+    "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
         "projectName": "Payment.Domain",
-        "projectPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jean_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jean_\\lab-2025-i-cps-u1-04-csharp-EdgardChambeT\\Payment\\Payment.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jean_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -133,13 +135,13 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -151,12 +153,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
